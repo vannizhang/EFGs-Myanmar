@@ -15,7 +15,7 @@ const LegendWidget: React.FC<Props> = ({ mapView }) => {
     // const [ legend, setLegend ] = React.useState<ILegend>();
 
     const init = async () => {
-        console.log('init legend');
+        // console.log('init legend');
         const legend = new Legend({
             view: mapView,
         });
@@ -32,7 +32,7 @@ const LegendWidget: React.FC<Props> = ({ mapView }) => {
     };
 
     React.useEffect(() => {
-        console.log(mapView);
+        // console.log(mapView);
 
         if (!mapView) {
             return;

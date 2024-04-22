@@ -5,3 +5,6 @@
 export const WEB_MAP_ID = '14e065e2fbfa4b10ac1a7aeec5a5dbea';
 
 export const APP_ID = 'caF3vMbpRnFvWhZJ';
+
+export const TITLE_OF_MYANMAR_EPG_LAYER =
+    'Myanmar EFG Preliminary Combinations (100m)';

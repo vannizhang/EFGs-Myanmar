@@ -18,6 +18,7 @@ import React, { useEffect, useState, useRef } from 'react';
 
 import MapView from '@arcgis/core/views/MapView';
 import WebMap from '@arcgis/core/WebMap';
+// import Map from '@arcgis/core/Map';
 import TileInfo from '@arcgis/core/layers/support/TileInfo';
 import classNames from 'classnames';
 
@@ -55,7 +56,6 @@ const MapViewWrapper: React.FC<Props> = ({
     const initMapView = () => {
         mapViewRef.current = new MapView({
             container: mapDivRef.current,
-            // center,
             // zoom,
             map: new WebMap({
                 portalItem: {
@@ -84,10 +84,6 @@ const MapViewWrapper: React.FC<Props> = ({
             mapViewRef.current.destroy();
         };
     }, []);
-
-    useEffect(() => {
-        console.log(mapView);
-    }, [mapView]);
 
     // useEffect(() => {
     //     if (!mapView) {

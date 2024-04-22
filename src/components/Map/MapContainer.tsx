@@ -27,7 +27,8 @@ import { Point } from '@arcgis/core/geometry';
 // import { MapCenterIndicator } from './MapCenterIndicator';
 import { WEB_MAP_ID } from '@constants/index';
 import LegendWidget from '@components/LegendWidget/LegendWidget';
-import { queryEcosystemData } from '@store/Map/thunks';
+import { MyanmarEFGLayerQueryTask } from '@components/MyanmarEFGLayer/MyanmarEFGLayer';
+import { myanmarEFGLayerIdentifyResultChanged } from '@store/Map/reducer';
 
 export const MapViewContainer = () => {
     const dispatch = useDispatch();
@@ -47,40 +48,45 @@ export const MapViewContainer = () => {
         >
             <MapView webmapId={WEB_MAP_ID}>
                 <EventHandlers
-                    onStationary={(center, zoom, extent) => {
-                        console.log(
-                            'map view is stationary',
-                            center,
-                            zoom,
-                            extent
-                        );
-                    }}
-                    onClickHandler={(point) => {
-                        // console.log('clicked on map', point);
-                        const { latitude, longitude } = point;
+                    // onStationary={(center, zoom, extent) => {
+                    //     // console.log(
+                    //     //     'map view is stationary',
+                    //     //     center,
+                    //     //     zoom,
+                    //     //     extent
+                    //     // );
+                    // }}
+                    // onClickHandler={(point) => {
+                    //     // console.log('clicked on map', point);
+                    //     // const { latitude, longitude } = point;
 
-                        const queryLocation = {
-                            x: +longitude,
-                            y: +latitude,
-                            longitude,
-                            latitude,
-                            spatialReference: {
-                                wkid: 4326,
-                            },
-                        } as Point;
+                    //     // const queryLocation = {
+                    //     //     x: +longitude,
+                    //     //     y: +latitude,
+                    //     //     longitude,
+                    //     //     latitude,
+                    //     //     spatialReference: {
+                    //     //         wkid: 4326,
+                    //     //     },
+                    //     // } as Point;
 
-                        // if (mapOnClick) {
-                        //     mapOnClick(queryLocation);
-                        // }
+                    //     // if (mapOnClick) {
+                    //     //     mapOnClick(queryLocation);
+                    //     // }
 
-                        // console.log(queryLocation);
-
-                        dispatch(queryEcosystemData(queryLocation));
-                    }}
+                    //     // console.log(queryLocation);
+                    // }}
                     mapViewUpdatingOnChange={setIsUpdating}
                 />
 
                 <LegendWidget />
+
+                <MyanmarEFGLayerQueryTask
+                    identifyResponseHandler={(res) => {
+                        // console.log(res)
+                        dispatch(myanmarEFGLayerIdentifyResultChanged(res));
+                    }}
+                />
             </MapView>
 
             <MapLoadingIndicator active={isUpdating} />
