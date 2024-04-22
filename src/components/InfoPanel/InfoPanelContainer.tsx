@@ -1,32 +1,42 @@
+import { Myanmar_EFG_Feature_Attributes } from '@services/Myanmar-EFG/config';
+import { getArrtibutesByPixelValue } from '@services/Myanmar-EFG/getArrtibuteByPixelValue';
 import { selectMyanmarEFGLayerIdentifyResult } from '@store/Map/selectors';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import { InfoPanel } from './InfoPanel';
 
 export const InfoPanelContainer = () => {
     const myanmarEFGLayerIdentifyResult = useSelector(
         selectMyanmarEFGLayerIdentifyResult
     );
 
-    const getContent = () => {
-        if (!myanmarEFGLayerIdentifyResult) {
-            return (
-                <div className="w-full opacity-50 text-center">
-                    <p>Click on map to get EFG related info </p>
-                </div>
-            );
+    const [featureAttributes, setFeatureAttributes] =
+        useState<Myanmar_EFG_Feature_Attributes>();
+
+    useEffect(() => {
+        if (
+            !myanmarEFGLayerIdentifyResult ||
+            !myanmarEFGLayerIdentifyResult.pixelValue
+        ) {
+            setFeatureAttributes(undefined);
+            return;
         }
 
-        return (
-            <div className="">{myanmarEFGLayerIdentifyResult.pixelValue}</div>
-        );
-    };
+        const featureAttributes =
+            myanmarEFGLayerIdentifyResult &&
+            myanmarEFGLayerIdentifyResult.pixelValue
+                ? getArrtibutesByPixelValue(
+                      myanmarEFGLayerIdentifyResult.pixelValue
+                  )
+                : undefined;
+
+        setFeatureAttributes(featureAttributes);
+    }, [myanmarEFGLayerIdentifyResult]);
 
     return (
-        <div className="text-sm my-4">
-            <div className="text-center mb-2">
-                <h3 className="text-lg">EFG Information</h3>
-            </div>
-            {getContent()}
-        </div>
+        <InfoPanel
+            featureAttributes={featureAttributes}
+            queryLocation={myanmarEFGLayerIdentifyResult?.point}
+        />
     );
 };
