@@ -1,7 +1,8 @@
 {
-  "name": "react-redux-boilerplate",
+  "name": "terrestrial-ecosystems-myanmar",
   "version": "1.0.0",
-  "description": "Start React+Redux project with TypeScript in an easier and faster way",
+  "description": "Explore the terrestrial ecosystems of Myanmar",
+  "title": "Terrestrial Ecosystems of Myanmar",
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",
@@ -22,7 +23,7 @@
     "url": "git+https://github.com/vannizhang/react-redux-boilerplate.git"
   },
   "keywords": [],
-  "author": "Jinnan Zhang",
+  "author": "ArcGIS Living Atlas of the World",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vannizhang/react-redux-boilerplate/issues"

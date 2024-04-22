@@ -23,7 +23,7 @@ module.exports =  (env, options)=> {
             chunkFilename: '[name].[contenthash].js',
             clean: true
         },
-        devtool: 'source-map',
+        // devtool: 'source-map',
         resolve: {
             extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
             alias: {
@@ -97,15 +97,15 @@ module.exports =  (env, options)=> {
             new HtmlWebpackPlugin({
                 template: './public/index.html',
                 filename: 'index.html',
-                title: package.name,
+                title: package.title,
                 meta: {
-                    title: package.name,
+                    title: package.title,
                     description: package.description,
                     author: package.author,
                     keywords: Array.isArray(package.keywords) 
                         ? package.keywords.join(',') 
                         : undefined,
-                    'og:title': package.name,
+                    'og:title': package.title,
                     'og:description': package.description,
                     'og:url': package.homepage,
                 },

@@ -1,0 +1,64 @@
+Title: Map of the terrestrial ecosystems of Myanmar, Version 1.0	
+Access Date: 19/03/2024
+Analyst: Naema_GrosDubois
+Year Represented: 2020	
+Short Name: unsw_myan_eco_2020	
+
+Abstract: This map of the terrestrial ecosystems of Myanmar was developed using a supervised learning approach to classify earth observation data and other geospatial datasets into broad mappable units, which was then split into the ecosystem types defined by the IUCN Red List of Ecosystems of Myanmar project. The shapefile presents the hierarchical ecosystem typology for Myanmar, including attributes that indicate ecosystems grouped at the Functional Ecotype and Ecosystem Type level of the Myanmar ecosystem typology. 	"
+
+Description: This dataset was produced by first developing a training set of 63124 point observations map classes that could be related to ecosystem types. The distribution of each map class was modelled using a random forest classifier and 89 covariate layers developed from data
+acquired in 2018. Each mappable unit was then compiled into a single map and a variety of expert rules were applied to split the map into ecosystem types defined by the IUCN Red List of Ecosystems of Myanmar ecosystem typology. Additional ecosystem types, including mudflats, aerobic caves, and glacial lakes were added from freely available published data. The final dataset thus depicts the modelled distribution of 52 terrestrial ecosystem types mapped at 90-m resolution. Further details of the mapping process are available in the IUCN Red List of Ecosystems of Myanmar report (Murray et al. 2020) and in an associated scientific paper (Duncan et al., in prep)"	
+
+Provider: University of New South Wales; James Cook University; Wildlife Conservation Society; IUCN Commission on Ecosystem Management; NSW Department of Planning Industry and Environment 
+
+Citation: "Murray, N.J., Keith, D.A., Tizard, R., Duncan, A., Htut, W.T., Hlaing, N., Oo, A.H., Ya, K.Z., Grantham, H. (2020) Map of the Terrestrial Ecosystems of Myanmar, Version 1.0. Figshare."
+Published Year: 2020		
+Contact: Nicholas Murray	
+email: nicholas.murray@jcu.edu.au	
+License: CC BY 4.0	
+License URL: https://creativecommons.org/licences/by/4.0/	
+URL: https://figshare.com/articles/dataset/Map_of_the_terrestrial_ecosystems_of_Myanmar_Version_1_0/12364067
+DOI: https://doi.org/10.6084/m9.figshare.12364067
+----------------------------------------------------------------
+
+Title: Global Mangrove Extent Change 1996–2020: Global Mangrove Watch Version 3.0
+Access Date: 25/03/2024
+Analyst: Naema_GrosDubois	
+Year Represented: 2020
+Short Name: gmw_global_mangrove_2022	
+
+Abstract: This study has used L-band Synthetic Aperture Radar (SAR) global mosaic datasets from the Japan Aerospace Exploration Agency (JAXA) for 11 epochs from 1996 to 2020 to develop a long-term time-series of global mangrove extent and change. The study used a map-to-image approach to change detection where the baseline map (GMW v2.5) was updated using thresholding and a contextual mangrove change mask. This approach was applied between all image-date pairs producing 10 maps for each epoch, which were summarised to produce the global mangrove time-series. The resulting mangrove extent maps had an estimated accuracy of 87.4 % (95th conf. int.: 86.2 - 88.6 %), although the accuracies of the individual gain and loss change classes were lower at 58.1 % (52.4 - 63.9 %) and 60.6 % (56.1 - 64.8 %), respectively. Sources of error included a mis-registration in the SAR mosaic datasets, which could only be partially corrected for, but also confusion in fragmented areas of mangroves, such as around aquaculture ponds. Overall, 152,604 km2 (133,996 - 176,910) of mangroves were identified for 1996, with this decreasing by -5,245 km2 (-13,587 - 3686) resulting in a total extent of 147,359 km2 (127,925 - 168,895) in 2020, and representing an estimated loss of 3.4 % over the 24-year time period. The Global Mangrove Watch Version 3.0 represents the most comprehensive record of global mangrove change achieved to date and is expected to support a wide range of activities, including the ongoing monitoring of the global coastal environment, defining and assessments of progress towards conservation targets, protected area planning and risk assessments of mangrove ecosystems worldwide.	
+
+Description: Mangroves are a globally important ecosystem that provides a wide range of ecosystem system services, such as carbon capture and storage, coastal protection and fisheries enhancement. Mangroves have significantly reduced in global extent over the last 50 years, primarily as a result of deforestation caused by the expansion of agriculture and aquaculture in coastal environments. However, a limited number of studies have attempted to estimate changes in global mangrove extent, particularly into the 1990s, despite much of the loss in mangrove extent occurring pre-2000. This study has used L-band Synthetic Aperture Radar (SAR) global mosaic datasets from the Japan Aerospace Exploration Agency (JAXA) for 11 epochs from 1996 to 2020 to develop a long-term time-series of global mangrove extent and change. The study used a map-to-image approach to change detection where the baseline map (GMW v2.5) was updated using thresholding and a contextual mangrove change mask. This approach was applied between all image-date pairs producing 10 maps for each epoch, which were summarised to produce the global mangrove time-series. The resulting mangrove extent maps had an estimated accuracy of 87.4% (95th conf. int.: 86.2–88.6%), although the accuracies of the individual gain and loss change classes were lower at 58.1% (52.4–63.9%) and 60.6% (56.1–64.8%), respectively. Sources of error included misregistration in the SAR mosaic datasets, which could only be partially corrected for, but also confusion in fragmented areas of mangroves, such as around aquaculture ponds. Overall, 152,604 km2 (133,996–176,910) of mangroves were identified for 1996, with this decreasing by −5245 km2 (−13,587–1444) resulting in a total extent of 147,359 km2 (127,925–168,895) in 2020, and representing an estimated loss of 3.4% over the 24-year time period. The Global Mangrove Watch Version 3.0 represents the most comprehensive record of global mangrove change achieved to date and is expected to support a wide range of activities, including the ongoing monitoring of the global coastal environment, defining and assessments of progress toward conservation targets, protected area planning and risk assessments of mangrove ecosystems worldwide.	
+
+Provider: Global Mangrove Watch; Aberystwyth University; solo Earth Observation;  Wetlands International; University of Maryland; NASA Goddard Space Flight Center; Japan Aerospace Exploration Agency; University of Cambridge; The Nature Conservancy; James Cook University; International Water Management Institute Sri Lanka	
+
+Citation: Bunting, P., Rosenqvist, A., Hilarides, L., Lucas, R., Thomas, N., Tadono, T., Worthington, T., Spalding, M., Murray, N., & Rebelo, L.-M. (2022). Global Mangrove Watch (1996 - 2020) Version 3.0 Dataset (3.0) [Data set]. Zenodo. 	
+
+Published Year: 2022		
+Contact: Global Mangrove Alliance	
+email: contact@mangrovealliance.org	
+License: CC BY 4.0 LEGAL CODE	
+License URL: https://creativecommons.org/licences/by/4.0/legalcode	
+URL: https://zenodo.org/records/6894273	
+DOI: https://doi.org/10.5281/zenodo.6894272	
+----------------------------------------------------------
+
+Title: High-resolution global maps of tidal flat ecosystems from 1984 to 2019
+Access Date: 25/03/2024
+Analyst: Naema_GrosDubois
+Year Represented: 2017-2019
+Short Name: uq_global_mudflats_2022
+	
+Abstract: This dataset contains global maps of tidal flat ecosystems produced via a supervised classification of 707,528 Landsat Archive images. Each pixel was classified into tidal flat, permanent water or other with reference to a globally distributed set of training data. This product depicts tidal flat ecosystems around the global coastline. Pixels classified as tidal flat in the analysis represent several types of tidal flat ecosystems, including unconsolidated fine-grain sediments (tidal mudflats), unconsolidated coarse-grain sediments (tidal sand flats), and consolidated sediments, organic material or rocks (wide tidal rock-platforms), while excluding spectral signatures indicating the presence of vegetation dominated intertidal ecosystems such as mangroves and vegetated marshes. The analysis aimed to identify pixels that are subject to regular tidal inundation, and therefore may also include other intertidal systems where intertidal dynamics are observable.	Description: Not Available.	
+
+Provider:  The University of Queensland; University of New South Wales; Google; Australian Institute of Marine Science	
+Citation: Murray, Nicholas; Phinn, Stuart; Fuller, Richard; DeWitt, Michael; Ferrari, Renata; Johnston, Renee; et al. (2022). High-resolution global maps of tidal flat ecosystems from 1984 to 2019. figshare. Collection.	
+
+Published Year: 2022		
+Contact: Nicholas Murray	
+email: nicholas.murray@jcu.edu.au	
+License: CC0 1.0 DEED	
+License URL: https://creativecommons.org/publicdomain/zero/1.0/	
+URL: https://springernature.figshare.com/collections/High-resolution_global_maps_of_tidal_flat_ecosystems_from_1984_to_2019/5884598/1
+DOI: https://doi.org/10.6084/m9.figshare.c.5884598.v1	

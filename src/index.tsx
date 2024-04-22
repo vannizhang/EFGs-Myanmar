@@ -1,4 +1,3 @@
-import '@arcgis/core/assets/esri/themes/dark/main.css';
 import './styles/index.css';
 
 import React from 'react';
