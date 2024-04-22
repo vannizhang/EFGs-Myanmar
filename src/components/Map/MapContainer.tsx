@@ -29,6 +29,7 @@ import { WEB_MAP_ID } from '@constants/index';
 import LegendWidget from '@components/LegendWidget/LegendWidget';
 import { MyanmarEFGLayerQueryTask } from '@components/MyanmarEFGLayer/MyanmarEFGLayer';
 import { myanmarEFGLayerIdentifyResultChanged } from '@store/Map/reducer';
+import { IdentifyTaskLocation } from '@components/IdentifyTaskLocation/IdentifyTaskLocation';
 
 export const MapViewContainer = () => {
     const dispatch = useDispatch();
@@ -80,6 +81,8 @@ export const MapViewContainer = () => {
                 />
 
                 <LegendWidget />
+
+                <IdentifyTaskLocation />
 
                 <MyanmarEFGLayerQueryTask
                     identifyResponseHandler={(res) => {

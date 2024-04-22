@@ -29,7 +29,15 @@ export const MyanmarEFGLayerQueryTask: FC<Props> = ({
             // console.log(res)
 
             identifyResponseHandler({
-                point,
+                point: {
+                    longitude: point.longitude,
+                    latitude: point.latitude,
+                    x: point.longitude,
+                    y: point.latitude,
+                    spatialReference: {
+                        wkid: 4326,
+                    },
+                } as Point,
                 pixelValue: res.value ? res.value[0] : undefined,
             });
         });
