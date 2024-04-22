@@ -23,19 +23,11 @@ import { ErrorPage } from '@components/ErrorPage/ErrorPage';
         const preloadedState = getPreloadedState();
 
         root.render(
-            <React.StrictMode>
-                <ReduxProvider store={configureAppStore(preloadedState)}>
-                    <AppContextProvider>
-                       <Layout />
-                    </AppContextProvider>
-                </ReduxProvider>
-            </React.StrictMode>
+            <ReduxProvider store={configureAppStore(preloadedState)}>
+                <Layout />
+            </ReduxProvider>
         );
-
-    } catch(err){
-        root.render(
-            <ErrorPage error={err} />
-        )
+    } catch (err) {
+        root.render(<ErrorPage error={err} />);
     }
-
 })();

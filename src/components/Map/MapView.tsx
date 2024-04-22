@@ -48,11 +48,11 @@ const MapViewWrapper: React.FC<Props> = ({
 }: Props) => {
     const mapDivRef = useRef<HTMLDivElement>();
 
-    const [mapView, setMapView] = useState<MapView>(null);
+    const [mapView, setMapView] = useState<MapView>();
 
     const mapViewRef = useRef<MapView>();
 
-    const initMapView = async () => {
+    const initMapView = () => {
         mapViewRef.current = new MapView({
             container: mapDivRef.current,
             // center,
@@ -84,6 +84,10 @@ const MapViewWrapper: React.FC<Props> = ({
             mapViewRef.current.destroy();
         };
     }, []);
+
+    useEffect(() => {
+        console.log(mapView);
+    }, [mapView]);
 
     // useEffect(() => {
     //     if (!mapView) {

@@ -26,7 +26,7 @@ import { MapLoadingIndicator } from './MapLoadingIndicator';
 import { Point } from '@arcgis/core/geometry';
 // import { MapCenterIndicator } from './MapCenterIndicator';
 import { WEB_MAP_ID } from '@constants/index';
-
+import LegendWidget from '@components/LegendWidget/LegendWidget';
 
 type Props = {
     /**
@@ -50,14 +50,21 @@ export const MapViewContainer: FC<Props> = ({ mapOnClick, children }) => {
 
     return (
         <div
-            className={classNames('absolute top-0 right-0 bottom-0 left-side-panel-width ')}
+            className={classNames(
+                'absolute top-0 right-0 bottom-0 left-side-panel-width '
+            )}
         >
             <MapView webmapId={WEB_MAP_ID}>
                 {children}
 
                 <EventHandlers
                     onStationary={(center, zoom, extent) => {
-                        console.log('map view is stationary', center, zoom, extent);
+                        console.log(
+                            'map view is stationary',
+                            center,
+                            zoom,
+                            extent
+                        );
                     }}
                     onClickHandler={(point) => {
                         // console.log('clicked on map', point);
@@ -76,14 +83,16 @@ export const MapViewContainer: FC<Props> = ({ mapOnClick, children }) => {
                         if (mapOnClick) {
                             mapOnClick(queryLocation);
                         }
+
+                        console.log(queryLocation);
                     }}
                     mapViewUpdatingOnChange={setIsUpdating}
                 />
 
-                <MapLoadingIndicator
-                    active={isUpdating}
-                />
+                <LegendWidget />
             </MapView>
+
+            <MapLoadingIndicator active={isUpdating} />
         </div>
     );
 };
