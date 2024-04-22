@@ -165,7 +165,7 @@ export const getPortalBaseUrl = () => {
     return urlKey ? `https://${urlKey}.${customBaseUrl}` : `${url}`;
 };
 
-export const switchAccount = (appId:string) => {
+export const switchAccount = (appId: string) => {
     const portalBaseUrl = getPortalBaseUrl();
     const redirectUri = `${window.location.origin}${window.location.pathname}`;
     const targetUrl = `${portalBaseUrl}/home/pages/Account/manage_accounts.html#redirect_uri=${redirectUri}&client_id=${appId}`;

@@ -7,7 +7,7 @@ import {
 
 // import { RootState, StoreDispatch, StoreGetState } from '../configureStore';
 export type UIState = {
-    showBottomPanel: boolean
+    showBottomPanel: boolean;
 };
 
 export const initialUIState: UIState = {
@@ -19,7 +19,7 @@ const slice = createSlice({
     initialState: initialUIState,
     reducers: {
         showBottomPanelToggled: (state, action: PayloadAction<boolean>) => {
-            state.showBottomPanel = action.payload
+            state.showBottomPanel = action.payload;
         },
     },
 });

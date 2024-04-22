@@ -9,7 +9,7 @@
 //             // ...
 
 //             // now everything is ready and we can dispatch the new webmap Id to the reducer to trigger the state change
-            
+
 //         } catch (err) {
 //             console.error(err);
 //         }

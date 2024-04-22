@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export const InfoPanel = () => {
-  return (
-    <div>InfoPanel</div>
-  )
-}
+    return <div>InfoPanel</div>;
+};

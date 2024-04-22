@@ -1,1 +1,1 @@
-export { MapViewContainer as Map } from './MapContainer'
+export { MapViewContainer as Map } from './MapContainer';
