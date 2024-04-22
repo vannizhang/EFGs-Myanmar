@@ -1,4 +1,7 @@
-// just a blank webmap
-export const WEB_MAP_ID = '5f3b7605b3364e7bb2416c93fae00995';
+/**
+ * Contains basis to evaluate sources for Myanmar EFG base map compilation.
+ * @see https://grouponeo.maps.arcgis.com/home/item.html?id=14e065e2fbfa4b10ac1a7aeec5a5dbea
+ */
+export const WEB_MAP_ID = '14e065e2fbfa4b10ac1a7aeec5a5dbea';
 
-export const APP_ID = '';
+export const APP_ID = 'caF3vMbpRnFvWhZJ';

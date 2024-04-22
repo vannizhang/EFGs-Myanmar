@@ -27,18 +27,9 @@ import { Point } from '@arcgis/core/geometry';
 // import { MapCenterIndicator } from './MapCenterIndicator';
 import { WEB_MAP_ID } from '@constants/index';
 import LegendWidget from '@components/LegendWidget/LegendWidget';
+import { queryEcosystemData } from '@store/Map/thunks';
 
-type Props = {
-    /**
-     * emits when user click on the map
-     * @param point map point where the user has clicked
-     * @returns
-     */
-    mapOnClick?: (point: Point) => void;
-    children?: React.ReactNode;
-};
-
-export const MapViewContainer: FC<Props> = ({ mapOnClick, children }) => {
+export const MapViewContainer = () => {
     const dispatch = useDispatch();
 
     const [isUpdating, setIsUpdating] = useState<boolean>(true);
@@ -55,8 +46,6 @@ export const MapViewContainer: FC<Props> = ({ mapOnClick, children }) => {
             )}
         >
             <MapView webmapId={WEB_MAP_ID}>
-                {children}
-
                 <EventHandlers
                     onStationary={(center, zoom, extent) => {
                         console.log(
@@ -80,11 +69,13 @@ export const MapViewContainer: FC<Props> = ({ mapOnClick, children }) => {
                             },
                         } as Point;
 
-                        if (mapOnClick) {
-                            mapOnClick(queryLocation);
-                        }
+                        // if (mapOnClick) {
+                        //     mapOnClick(queryLocation);
+                        // }
 
-                        console.log(queryLocation);
+                        // console.log(queryLocation);
+
+                        dispatch(queryEcosystemData(queryLocation));
                     }}
                     mapViewUpdatingOnChange={setIsUpdating}
                 />

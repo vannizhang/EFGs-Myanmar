@@ -6,7 +6,7 @@ import { Provider as ReduxProvider } from 'react-redux';
 
 import configureAppStore, { getPreloadedState } from './store/configureStore';
 
-import AppContextProvider from './contexts/AppContextProvider';
+// import AppContextProvider from './contexts/AppContextProvider';
 import { Layout } from '@components/Layout/Layout';
 import { initEsriOAuth } from '@utils/esri-oauth';
 import { APP_ID } from './constants';
@@ -16,9 +16,9 @@ import { ErrorPage } from '@components/ErrorPage/ErrorPage';
     const root = createRoot(document.getElementById('root'));
 
     try {
-        // await initEsriOAuth({
-        //     appId: APP_ID
-        // })
+        await initEsriOAuth({
+            appId: APP_ID,
+        });
 
         const preloadedState = getPreloadedState();
 
