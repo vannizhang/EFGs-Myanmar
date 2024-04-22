@@ -1,3 +1,4 @@
+import '@arcgis/core/assets/esri/themes/dark/main.css';
 import './styles/index.css';
 
 import React from 'react';
@@ -7,21 +8,35 @@ import { Provider as ReduxProvider } from 'react-redux';
 import configureAppStore, { getPreloadedState } from './store/configureStore';
 
 import AppContextProvider from './contexts/AppContextProvider';
-
-import { ToDoList } from '@components/ToDo/ToDoList';
+import { Layout } from '@components/Layout/Layout';
+import { initEsriOAuth } from '@utils/esri-oauth';
+import { APP_ID } from './constants';
+import { ErrorPage } from '@components/ErrorPage/ErrorPage';
 
 (async () => {
-    const preloadedState = getPreloadedState();
-
     const root = createRoot(document.getElementById('root'));
 
-    root.render(
-        <React.StrictMode>
-            <ReduxProvider store={configureAppStore(preloadedState)}>
-                <AppContextProvider>
-                    <ToDoList />
-                </AppContextProvider>
-            </ReduxProvider>
-        </React.StrictMode>
-    );
+    try {
+        // await initEsriOAuth({
+        //     appId: APP_ID
+        // })
+
+        const preloadedState = getPreloadedState();
+
+        root.render(
+            <React.StrictMode>
+                <ReduxProvider store={configureAppStore(preloadedState)}>
+                    <AppContextProvider>
+                       <Layout />
+                    </AppContextProvider>
+                </ReduxProvider>
+            </React.StrictMode>
+        );
+
+    } catch(err){
+        root.render(
+            <ErrorPage error={err} />
+        )
+    }
+
 })();

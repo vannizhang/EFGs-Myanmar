@@ -5,10 +5,13 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible" />
         <meta name="viewport" content="width=device-width, user-scalable=no" />
         <title><%= htmlWebpackPlugin.options.title %></title>
+
+        <script type="module" src="https://js.arcgis.com/calcite-components/2.7.1/calcite.esm.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.7.1/calcite.css" />
         <!-- <link rel="icon" href="public/favicon.ico"> -->
         <!-- <meta property="og:image" content="public/thumbnail.jpg" /> -->
     </head>
-    <body>
+    <body class="calcite-mode-dark">
         <div id='root'></div>
     </body>
 </html>

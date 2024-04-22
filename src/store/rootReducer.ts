@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 // import Map from './Map/reducer';
-import ToDo from './ToDo/reducer';
+import UI from './UI/reducer';
 
 export default combineReducers({
-    ToDo,
+    UI,
 });

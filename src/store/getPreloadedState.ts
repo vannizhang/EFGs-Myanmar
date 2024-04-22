@@ -1,10 +1,10 @@
-import { initialToDoState } from './ToDo/reducer';
+import { initialUIState } from './UI/reducer';
 import { PartialRootState } from './configureStore';
 
 const getPreloadedState = (): PartialRootState => {
     return {
-        ToDo: {
-            ...initialToDoState,
+        UI: {
+            ...initialUIState,
         },
     };
 };
