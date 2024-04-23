@@ -9,8 +9,8 @@ export const SidePanel = () => {
         <div className="absolute top-0 left-0 bottom-0 w-side-panel-width p-4 overflow-y-auto fancy-scrollbar">
             <Header />
             <InfoPanel />
-            <Histogram />
             <PixelValueSelector />
+            <Histogram />
         </div>
     );
 };
