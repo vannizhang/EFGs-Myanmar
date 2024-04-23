@@ -35,6 +35,7 @@ import {
 import { IdentifyTaskLocation } from '@components/IdentifyTaskLocation/IdentifyTaskLocation';
 import BookmarksWidget from '@components/BookmarkWidget/BookmarkWidget';
 import LayerListWidget from '@components/LayersList/LayersList';
+import Sentinel2Layer from '@components/Sentinel2Layer/Sentinel2Layer';
 
 export const MapViewContainer = () => {
     const dispatch = useDispatch();
@@ -92,6 +93,8 @@ export const MapViewContainer = () => {
                 <LegendWidget />
 
                 <IdentifyTaskLocation />
+
+                <Sentinel2Layer />
 
                 <MyanmarEFGLayerQueryTask
                     identifyResponseHandler={(res) => {
