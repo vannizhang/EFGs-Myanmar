@@ -49,7 +49,7 @@ export const PixelValueSelector = () => {
     return (
         <div className="mt-8">
             <div className="mb-2 text-center">
-                <h3 className="mb-1">Myanmar EFG Preliminary Combinations</h3>
+                <h3 className="mb-1">EFG Preliminary Combinations</h3>
                 <p className="text-xs opacity-50">Click to toggle visibility</p>
             </div>
             <div className="grid grid-cols-2">
