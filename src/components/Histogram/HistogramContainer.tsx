@@ -1,4 +1,5 @@
 import { getArrtibutesByPixelValue } from '@services/Myanmar-EFG/getArrtibuteByPixelValue';
+import { getFillColorByEFGName } from '@services/Myanmar-EFG/getColorByEFGName';
 import { selectMyanmarEFGLayerHistogramResult } from '@store/Map/selectors';
 import { HorizontalBarChart } from '@vannizhang/react-d3-charts';
 import { HorizontalBarChartDataItem } from '@vannizhang/react-d3-charts/dist/HorizontalBarChart/types';
@@ -36,15 +37,18 @@ export const HistogramContainer = () => {
 
             const pctOfPxiels = Math.round((val / countOfPixels) * 100);
 
+            const EFGName = attributes.EFG_Name;
+
             const y =
-                attributes.EFG_Name.length > 45
-                    ? attributes.EFG_Name.slice(0, 45) + '...'
-                    : attributes.EFG_Name;
+                EFGName.length > 45 ? EFGName.slice(0, 45) + '...' : EFGName;
+
+            const fillColor = getFillColorByEFGName(EFGName);
 
             data.push({
                 x: pctOfPxiels,
                 y,
-                tooltip: `${pctOfPxiels}%`,
+                fill: `rgba(${fillColor.join(',')})`,
+                // tooltip: `${pctOfPxiels}%`,
             });
         }
 

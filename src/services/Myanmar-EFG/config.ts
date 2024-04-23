@@ -1586,5 +1586,308 @@ export const RASTER_ATTRIBUTE_TABLE = {
     ],
 };
 
+export const UNIQUE_VALUE_INFO = [
+    {
+        label: 'T1.1 Tropical/Subtropical lowland rainforests',
+        symbol: {
+            type: 'esriSFS',
+            color: [59, 135, 115, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Tropical/Subtropical lowland rainforests',
+    },
+    {
+        label: 'T1.2 Tropical/Subtropical dry forests and thickets',
+        symbol: {
+            type: 'esriSFS',
+            color: [147, 186, 123, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Tropical/Subtropical dry forests and thickets',
+    },
+    {
+        label: 'T1.3 Tropical/Subtropical montane rainforests',
+        symbol: {
+            type: 'esriSFS',
+            color: [109, 176, 128, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Tropical/Subtropical montane rainforests',
+    },
+    {
+        label: 'T2.1 Boreal and temperate high montane forests and woodlands',
+        symbol: {
+            type: 'esriSFS',
+            color: [159, 227, 204, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Boreal and temperate high montane forests and woodlands',
+    },
+    {
+        label: 'T2.4 Warm temperate laurophyll forests',
+        symbol: {
+            type: 'esriSFS',
+            color: [28, 105, 85, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Warm temperate laurophyll forests',
+    },
+    {
+        label: 'T4.2 Pyric tussock savannas',
+        symbol: {
+            type: 'esriSFS',
+            color: [180, 212, 133, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Pyric tussock savannas',
+    },
+    {
+        label: 'T6.1 Ice sheets, glaciers and perennial snowfields',
+        symbol: {
+            type: 'esriSFS',
+            color: [237, 252, 244, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Ice sheets, glaciers and perennial snowfields',
+    },
+    {
+        label: 'T6.2 Polar/alpine cliffs, screes, outcrops and lava flows',
+        symbol: {
+            type: 'esriSFS',
+            color: [120, 113, 103, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Polar/alpine cliffs, screes, outcrops and lava flows',
+    },
+    {
+        label: 'T6.4 Temperate alpine grasslands and shrublands',
+        symbol: {
+            type: 'esriSFS',
+            color: [103, 189, 66, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Temperate alpine grasslands and shrublands',
+    },
+    {
+        label: 'TF1.1 Tropical flooded forests and peat forests',
+        symbol: {
+            type: 'esriSFS',
+            color: [94, 120, 81, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Tropical flooded forests and peat forests',
+    },
+    {
+        label: 'TF1.4 Seasonal floodplain marshes',
+        symbol: {
+            type: 'esriSFS',
+            color: [135, 196, 185, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Seasonal floodplain marshes',
+    },
+    {
+        label: 'S1.1 Aerobic caves',
+        symbol: {
+            type: 'esriSFS',
+            color: [158, 115, 55, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Aerobic caves',
+    },
+    {
+        label: 'F2.4 Freeze-thaw freshwater lakes',
+        symbol: {
+            type: 'esriSFS',
+            color: [101, 217, 240, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Freeze-thaw freshwater lakes',
+    },
+    {
+        label: 'MT1.3 Sandy shorelines',
+        symbol: {
+            type: 'esriSFS',
+            color: [207, 199, 143, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Sandy shorelines',
+    },
+    {
+        label: 'MT1.2 Muddy shorelines',
+        symbol: {
+            type: 'esriSFS',
+            color: [122, 111, 67, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Muddy shorelines',
+    },
+    {
+        label: 'MFT1.2 Intertidal forests and shrublands',
+        symbol: {
+            type: 'esriSFS',
+            color: [35, 110, 85, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Intertidal forests and shrublands',
+    },
+    {
+        label: 'MT1.4 Boulder and cobble shores',
+        symbol: {
+            type: 'esriSFS',
+            color: [168, 166, 133, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Boulder and cobble shores',
+    },
+    {
+        label: 'Tie with 2 Sources',
+        symbol: {
+            type: 'esriSFS',
+            color: [253, 154, 33, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Tie with 2 Sources',
+    },
+    {
+        label: 'Tie with 3 Sources',
+        symbol: {
+            type: 'esriSFS',
+            color: [191, 23, 96, 255],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Tie with 3 Sources',
+    },
+    {
+        label: 'Not Assigned',
+        symbol: {
+            type: 'esriSFS',
+            color: [0, 0, 0, 0],
+            outline: {
+                type: 'esriSLS',
+                color: [0, 0, 0, 0],
+                width: 0,
+                style: 'esriSLSSolid',
+            },
+            style: 'esriSFSSolid',
+        },
+        value: 'Not Assigned',
+    },
+];
+
 export type Myanmar_EFG_Feature_Attributes =
     typeof RASTER_ATTRIBUTE_TABLE.features[0]['attributes'];

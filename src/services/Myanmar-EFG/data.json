@@ -1,0 +1,1205 @@
+{
+    "visibility": true,
+    "interpolation": "RSP_NearestNeighbor",
+    "layerDefinition": {
+        "drawingInfo": {
+            "renderer": {
+                "authoringInfo": {
+                    "colorRamp": {
+                        "type": "multipart",
+                        "colorRamps": [
+                            {
+                                "type": "algorithmic",
+                                "fromColor": [190, 190, 190, 255],
+                                "toColor": [255, 45, 8, 255]
+                            },
+                            {
+                                "type": "algorithmic",
+                                "fromColor": [255, 45, 8, 255],
+                                "toColor": [255, 181, 61, 255]
+                            },
+                            {
+                                "type": "algorithmic",
+                                "fromColor": [255, 181, 61, 255],
+                                "toColor": [255, 254, 52, 255]
+                            },
+                            {
+                                "type": "algorithmic",
+                                "fromColor": [255, 254, 52, 255],
+                                "toColor": [0, 251, 50, 255]
+                            },
+                            {
+                                "type": "algorithmic",
+                                "fromColor": [0, 251, 50, 255],
+                                "toColor": [255, 254, 52, 255]
+                            },
+                            {
+                                "type": "algorithmic",
+                                "fromColor": [0, 253, 255, 255],
+                                "toColor": [0, 181, 255, 255]
+                            },
+                            {
+                                "type": "algorithmic",
+                                "fromColor": [0, 181, 255, 255],
+                                "toColor": [26, 35, 253, 255]
+                            },
+                            {
+                                "type": "algorithmic",
+                                "fromColor": [26, 35, 253, 255],
+                                "toColor": [255, 57, 251, 255]
+                            },
+                            {
+                                "type": "algorithmic",
+                                "fromColor": [255, 57, 251, 255],
+                                "toColor": [255, 45, 8, 255]
+                            }
+                        ]
+                    }
+                },
+                "type": "uniqueValue",
+                "field1": "EFG_Name",
+                "uniqueValueGroups": [
+                    {
+                        "classes": [
+                            {
+                                "label": "T1.1 Tropical/Subtropical lowland rainforests",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [59, 135, 115, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [
+                                    ["Tropical/Subtropical lowland rainforests"]
+                                ]
+                            },
+                            {
+                                "label": "T1.2 Tropical/Subtropical dry forests and thickets",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [147, 186, 123, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [
+                                    [
+                                        "Tropical/Subtropical dry forests and thickets"
+                                    ]
+                                ]
+                            },
+                            {
+                                "label": "T1.3 Tropical/Subtropical montane rainforests",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [109, 176, 128, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [
+                                    ["Tropical/Subtropical montane rainforests"]
+                                ]
+                            },
+                            {
+                                "label": "T2.1 Boreal and temperate high montane forests and woodlands",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [159, 227, 204, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [
+                                    [
+                                        "Boreal and temperate high montane forests and woodlands"
+                                    ]
+                                ]
+                            },
+                            {
+                                "label": "T2.4 Warm temperate laurophyll forests",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [28, 105, 85, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [
+                                    ["Warm temperate laurophyll forests"]
+                                ]
+                            },
+                            {
+                                "label": "T4.2 Pyric tussock savannas",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [180, 212, 133, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [["Pyric tussock savannas"]]
+                            },
+                            {
+                                "label": "T6.1 Ice sheets, glaciers and perennial snowfields",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [237, 252, 244, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [
+                                    [
+                                        "Ice sheets, glaciers and perennial snowfields"
+                                    ]
+                                ]
+                            },
+                            {
+                                "label": "T6.2 Polar/alpine cliffs, screes, outcrops and lava flows",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [120, 113, 103, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [
+                                    [
+                                        "Polar/alpine cliffs, screes, outcrops and lava flows"
+                                    ]
+                                ]
+                            },
+                            {
+                                "label": "T6.4 Temperate alpine grasslands and shrublands",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [103, 189, 66, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [
+                                    [
+                                        "Temperate alpine grasslands and shrublands"
+                                    ]
+                                ]
+                            },
+                            {
+                                "label": "TF1.1 Tropical flooded forests and peat forests",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [94, 120, 81, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [
+                                    [
+                                        "Tropical flooded forests and peat forests"
+                                    ]
+                                ]
+                            },
+                            {
+                                "label": "TF1.4 Seasonal floodplain marshes",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [135, 196, 185, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [["Seasonal floodplain marshes"]]
+                            },
+                            {
+                                "label": "S1.1 Aerobic caves",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [158, 115, 55, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [["Aerobic caves"]]
+                            },
+                            {
+                                "label": "F2.4 Freeze-thaw freshwater lakes",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [101, 217, 240, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [["Freeze-thaw freshwater lakes"]]
+                            },
+                            {
+                                "label": "MT1.3 Sandy shorelines",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [207, 199, 143, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [["Sandy shorelines"]]
+                            },
+                            {
+                                "label": "MT1.2 Muddy shorelines",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [122, 111, 67, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [["Muddy shorelines"]]
+                            },
+                            {
+                                "label": "MFT1.2 Intertidal forests and shrublands",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [35, 110, 85, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [
+                                    ["Intertidal forests and shrublands"]
+                                ]
+                            },
+                            {
+                                "label": "MT1.4 Boulder and cobble shores",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [168, 166, 133, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [["Boulder and cobble shores"]]
+                            },
+                            {
+                                "label": "Tie with 2 Sources",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [253, 154, 33, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [["Tie with 2 Sources"]]
+                            },
+                            {
+                                "label": "Tie with 3 Sources",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [191, 23, 96, 255],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [["Tie with 3 Sources"]]
+                            },
+                            {
+                                "label": "Not Assigned",
+                                "symbol": {
+                                    "type": "esriSFS",
+                                    "color": [0, 0, 0, 0],
+                                    "outline": {
+                                        "type": "esriSLS",
+                                        "color": [0, 0, 0, 0],
+                                        "width": 0,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "style": "esriSFSSolid"
+                                },
+                                "values": [["Not Assigned"]]
+                            }
+                        ]
+                    }
+                ],
+                "uniqueValueInfos": [
+                    {
+                        "label": "T1.1 Tropical/Subtropical lowland rainforests",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [59, 135, 115, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Tropical/Subtropical lowland rainforests"
+                    },
+                    {
+                        "label": "T1.2 Tropical/Subtropical dry forests and thickets",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [147, 186, 123, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Tropical/Subtropical dry forests and thickets"
+                    },
+                    {
+                        "label": "T1.3 Tropical/Subtropical montane rainforests",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [109, 176, 128, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Tropical/Subtropical montane rainforests"
+                    },
+                    {
+                        "label": "T2.1 Boreal and temperate high montane forests and woodlands",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [159, 227, 204, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Boreal and temperate high montane forests and woodlands"
+                    },
+                    {
+                        "label": "T2.4 Warm temperate laurophyll forests",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [28, 105, 85, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Warm temperate laurophyll forests"
+                    },
+                    {
+                        "label": "T4.2 Pyric tussock savannas",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [180, 212, 133, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Pyric tussock savannas"
+                    },
+                    {
+                        "label": "T6.1 Ice sheets, glaciers and perennial snowfields",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [237, 252, 244, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Ice sheets, glaciers and perennial snowfields"
+                    },
+                    {
+                        "label": "T6.2 Polar/alpine cliffs, screes, outcrops and lava flows",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [120, 113, 103, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Polar/alpine cliffs, screes, outcrops and lava flows"
+                    },
+                    {
+                        "label": "T6.4 Temperate alpine grasslands and shrublands",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [103, 189, 66, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Temperate alpine grasslands and shrublands"
+                    },
+                    {
+                        "label": "TF1.1 Tropical flooded forests and peat forests",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [94, 120, 81, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Tropical flooded forests and peat forests"
+                    },
+                    {
+                        "label": "TF1.4 Seasonal floodplain marshes",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [135, 196, 185, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Seasonal floodplain marshes"
+                    },
+                    {
+                        "label": "S1.1 Aerobic caves",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [158, 115, 55, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Aerobic caves"
+                    },
+                    {
+                        "label": "F2.4 Freeze-thaw freshwater lakes",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [101, 217, 240, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Freeze-thaw freshwater lakes"
+                    },
+                    {
+                        "label": "MT1.3 Sandy shorelines",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [207, 199, 143, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Sandy shorelines"
+                    },
+                    {
+                        "label": "MT1.2 Muddy shorelines",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [122, 111, 67, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Muddy shorelines"
+                    },
+                    {
+                        "label": "MFT1.2 Intertidal forests and shrublands",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [35, 110, 85, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Intertidal forests and shrublands"
+                    },
+                    {
+                        "label": "MT1.4 Boulder and cobble shores",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [168, 166, 133, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Boulder and cobble shores"
+                    },
+                    {
+                        "label": "Tie with 2 Sources",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [253, 154, 33, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Tie with 2 Sources"
+                    },
+                    {
+                        "label": "Tie with 3 Sources",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [191, 23, 96, 255],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Tie with 3 Sources"
+                    },
+                    {
+                        "label": "Not Assigned",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "color": [0, 0, 0, 0],
+                            "outline": {
+                                "type": "esriSLS",
+                                "color": [0, 0, 0, 0],
+                                "width": 0,
+                                "style": "esriSLSSolid"
+                            },
+                            "style": "esriSFSSolid"
+                        },
+                        "value": "Not Assigned"
+                    }
+                ]
+            }
+        }
+    },
+    "maxScale": 50085.5086,
+    "popupInfo": {
+        "popupElements": [
+            {
+                "type": "fields",
+                "description": "",
+                "fieldInfos": [
+                    {
+                        "fieldName": "Raster.Realm_Name",
+                        "isEditable": true,
+                        "label": "Realm Name",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.Biome_Name",
+                        "isEditable": true,
+                        "label": "Biome Name",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.EFG_Name",
+                        "isEditable": true,
+                        "label": "EFG Name",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.Count",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "Total Cell Count",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.T1_1_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "T1_1_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.T1_2_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "T1_2_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.T1_3_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "T1_3_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.T2_1_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "T2_1_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.T2_4_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "T2_4_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.T4_2_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "T4_2_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.T6_1_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "T6_1_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.T6_2_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "T6_2_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.T6_4_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "T6_4_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.TF1_1_0_20",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "TF1_1_0_20",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.TF1_4_0_20",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "TF1_4_0_20",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.S1_1_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "S1_1_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.F2_4_0_202",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "F2_4_0_202",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.MT1_2_0_20",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "MT1_2_0_20",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.MT1_3_0_20",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "MT1_3_0_20",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.MFT1_2_0_2",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "MFT1_2_0_2",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.MT1_2_0_21",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "MT1_2_0_21",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.MFT1_2_0_1",
+                        "format": {
+                            "digitSeparator": true,
+                            "places": 0
+                        },
+                        "isEditable": true,
+                        "label": "MFT1_2_0_1",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "Raster.GET_DscURL",
+                        "isEditable": true,
+                        "label": "GET_DscURL",
+                        "visible": true
+                    }
+                ],
+                "title": ""
+            }
+        ],
+        "fieldInfos": [
+            {
+                "fieldName": "Raster.Biome_Code",
+                "isEditable": true,
+                "label": "Biome_Code",
+                "visible": false
+            },
+            {
+                "fieldName": "Raster.Biome_Name",
+                "isEditable": true,
+                "label": "Biome Name",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.Count",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "Total Cell Count",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.EFG_BM_Val",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "EFG_BM_Val",
+                "visible": false
+            },
+            {
+                "fieldName": "Raster.EFG_Code",
+                "isEditable": true,
+                "label": "EFG_Code",
+                "visible": false
+            },
+            {
+                "fieldName": "Raster.EFG_Count",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "EFG_Count",
+                "visible": false
+            },
+            {
+                "fieldName": "Raster.EFG_Name",
+                "isEditable": true,
+                "label": "EFG Name",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.F2_4_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "F2_4_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.GET_DscURL",
+                "isEditable": true,
+                "label": "GET_DscURL",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.MFT1_2_0_1",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "MFT1_2_0_1",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.MFT1_2_0_2",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "MFT1_2_0_2",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.MT1_2_0_20",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "MT1_2_0_20",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.MT1_2_0_21",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "MT1_2_0_21",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.MT1_3_0_20",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "MT1_3_0_20",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.ServicePixelValue",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": false,
+                "label": "Pixel Value",
+                "visible": false
+            },
+            {
+                "fieldName": "Raster.ServicePixelValue.Raw",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": false,
+                "label": "Raw Pixel Value",
+                "visible": false
+            },
+            {
+                "fieldName": "Raster.Realm_Code",
+                "isEditable": true,
+                "label": "Realm_Code",
+                "visible": false
+            },
+            {
+                "fieldName": "Raster.Realm_Name",
+                "isEditable": true,
+                "label": "Realm Name",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.S1_1_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "S1_1_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.T1_1_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "T1_1_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.T1_2_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "T1_2_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.T1_3_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "T1_3_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.T2_1_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "T2_1_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.T2_4_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "T2_4_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.T4_2_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "T4_2_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.T6_1_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "T6_1_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.T6_2_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "T6_2_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.T6_4_0_202",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "T6_4_0_202",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.TF1_1_0_20",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "TF1_1_0_20",
+                "visible": true
+            },
+            {
+                "fieldName": "Raster.TF1_4_0_20",
+                "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                },
+                "isEditable": true,
+                "label": "TF1_4_0_20",
+                "visible": true
+            }
+        ],
+        "title": "Combinations: {Raster.EFG_Name}"
+    }
+}
