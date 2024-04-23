@@ -27,7 +27,7 @@ import { Point } from '@arcgis/core/geometry';
 // import { MapCenterIndicator } from './MapCenterIndicator';
 import { WEB_MAP_ID } from '@constants/index';
 import LegendWidget from '@components/LegendWidget/LegendWidget';
-import { MyanmarEFGLayerQueryTask } from '@components/MyanmarEFGLayer/MyanmarEFGLayer';
+import { MyanmarEFGLayerQueryTask } from '@components/MyanmarEFGLayer/MyanmarEFGLayerQueryTask';
 import {
     myanmarEFGLayerHistogramResultChanged,
     myanmarEFGLayerIdentifyResultChanged,
