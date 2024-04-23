@@ -29,8 +29,17 @@ export const PixelValueSelector = () => {
 
             const features = getAttributesByEFGName(name);
 
-            const pixelValues = features.map((d) => d.attributes.Value);
-            // console.log(pixelValues, selectedPixelValues)
+            let pixelValues = features.map((d) => d.attributes.Value);
+            // console.log(pixelValues)
+
+            // Use hard coded pixel values for these two EFG value.
+            // for some reason we encounter "RangeError: offset is out of bounds" error when use the `pixelValues`
+            // returned above.
+            if (name === 'Tie with 3 Sources') {
+                pixelValues = [28, 29, 32];
+            } else if (name === 'Boulder and cobble shores') {
+                pixelValues = [30, 45];
+            }
 
             dispatch(myanmarEFGLayerSelectedPixelsValueChanged(pixelValues));
         },
