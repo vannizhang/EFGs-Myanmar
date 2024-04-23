@@ -34,14 +34,11 @@ export const IdentifyTaskLocation: FC<Props> = ({ mapView }) => {
         selectMyanmarEFGLayerIdentifyResult
     );
 
-    const init = () => {
-        graphicLayerRef.current = new GraphicsLayer();
-        mapView.map.add(graphicLayerRef.current);
-    };
-
     const showAnchorPoint = async () => {
         try {
-            graphicLayerRef.current.removeAll();
+            graphicLayerRef.current = new GraphicsLayer({
+                title: 'Identify Task Location',
+            });
 
             const graphic = new Graphic({
                 geometry: {
@@ -57,6 +54,8 @@ export const IdentifyTaskLocation: FC<Props> = ({ mapView }) => {
             });
 
             graphicLayerRef.current.add(graphic);
+
+            mapView.map.add(graphicLayerRef.current);
         } catch (err) {
             console.error(err);
         }
@@ -68,12 +67,8 @@ export const IdentifyTaskLocation: FC<Props> = ({ mapView }) => {
                 return;
             }
 
-            if (!graphicLayerRef.current) {
-                init();
-            }
-
             if (!myanmarEFGLayerIdentifyResult?.point) {
-                graphicLayerRef.current.removeAll();
+                mapView.map.remove(graphicLayerRef.current);
             } else {
                 showAnchorPoint();
             }

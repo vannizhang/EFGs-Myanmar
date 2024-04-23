@@ -11,6 +11,8 @@ interface Props {
 
 const LayerListWidget: React.FC<Props> = ({ mapView }) => {
     const init = () => {
+        mapView.map.layers.forEach((d) => console.log(d.title));
+
         // console.log('init legend');
         const layerList = new LayerList({
             view: mapView,
