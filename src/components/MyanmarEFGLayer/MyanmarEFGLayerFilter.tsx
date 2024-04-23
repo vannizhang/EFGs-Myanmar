@@ -32,7 +32,7 @@ export const MyanmarEFGLayerFilter: FC<Props> = ({ mapView }) => {
         }
 
         const rasterFunction = mask({
-            includedRanges, //[[4, 4]],
+            includedRanges,
             noDataValues: [],
         });
 

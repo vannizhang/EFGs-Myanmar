@@ -119,8 +119,9 @@ export const InfoPanel: FC<Props> = ({
                         appearance="outline"
                         width="full"
                         href={featureAttributes.GET_DscURL}
+                        target="_blank"
                     >
-                        Check Detailed Description
+                        Open GET Description
                     </calcite-button>
                     {/* <span className='ml-2'>Learn more from Global Ecosystem Topology Website</span> */}
                 </div>
@@ -131,7 +132,7 @@ export const InfoPanel: FC<Props> = ({
     return (
         <div className=" my-4">
             <div className="text-center mb-2">
-                <h3 className="text-lg">EFG Information</h3>
+                <h3 className="">EFG Information</h3>
             </div>
             {getContent()}
         </div>

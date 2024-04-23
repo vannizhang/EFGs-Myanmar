@@ -7,25 +7,25 @@ import {
 
 // import { RootState, StoreDispatch, StoreGetState } from '../configureStore';
 export type UIState = {
-    showBottomPanel: boolean;
+    showAboutModal: boolean;
 };
 
 export const initialUIState: UIState = {
-    showBottomPanel: true,
+    showAboutModal: false,
 };
 
 const slice = createSlice({
     name: 'UI',
     initialState: initialUIState,
     reducers: {
-        showBottomPanelToggled: (state, action: PayloadAction<boolean>) => {
-            state.showBottomPanel = action.payload;
+        showAboutModalToggled: (state, action: PayloadAction<boolean>) => {
+            state.showAboutModal = action.payload;
         },
     },
 });
 
 const { reducer } = slice;
 
-export const { showBottomPanelToggled } = slice.actions;
+export const { showAboutModalToggled } = slice.actions;
 
 export default reducer;

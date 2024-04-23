@@ -2,7 +2,7 @@
   "name": "terrestrial-ecosystems-myanmar",
   "version": "1.0.0",
   "description": "Explore the terrestrial ecosystems of Myanmar",
-  "title": "Terrestrial Ecosystems of Myanmar",
+  "title": "EFGs of Myanmar",
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",

@@ -1,3 +1,4 @@
+import { About } from '@components/About/About';
 import { BottomPanel } from '@components/BottomPanel/BottomPanel';
 import { ErrorBoundary } from '@components/ErrorBoundary';
 import { Map } from '@components/Map/';
@@ -9,6 +10,7 @@ export const Layout = () => {
         <ErrorBoundary>
             <SidePanel></SidePanel>
             <Map />
+            <About />
         </ErrorBoundary>
     );
 };
