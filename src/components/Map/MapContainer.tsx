@@ -28,7 +28,10 @@ import { Point } from '@arcgis/core/geometry';
 import { WEB_MAP_ID } from '@constants/index';
 import LegendWidget from '@components/LegendWidget/LegendWidget';
 import { MyanmarEFGLayerQueryTask } from '@components/MyanmarEFGLayer/MyanmarEFGLayer';
-import { myanmarEFGLayerIdentifyResultChanged } from '@store/Map/reducer';
+import {
+    myanmarEFGLayerHistogramResultChanged,
+    myanmarEFGLayerIdentifyResultChanged,
+} from '@store/Map/reducer';
 import { IdentifyTaskLocation } from '@components/IdentifyTaskLocation/IdentifyTaskLocation';
 
 export const MapViewContainer = () => {
@@ -88,6 +91,10 @@ export const MapViewContainer = () => {
                     identifyResponseHandler={(res) => {
                         // console.log(res)
                         dispatch(myanmarEFGLayerIdentifyResultChanged(res));
+                    }}
+                    computeHistogramResponseHandler={(res) => {
+                        // console.log(res)
+                        dispatch(myanmarEFGLayerHistogramResultChanged(res));
                     }}
                 />
             </MapView>

@@ -6,3 +6,20 @@
 body {
     @apply bg-custom-background-4 text-custom-text-1;
 }
+
+.fancy-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.fancy-scrollbar::-webkit-scrollbar-track {
+    background: var(--calcite-color-foreground-2); 
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--calcite-color-foreground-1); 
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--calcite-color-background);
+}
