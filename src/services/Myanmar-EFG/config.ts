@@ -1889,5 +1889,141 @@ export const UNIQUE_VALUE_INFO = [
     },
 ];
 
+export const OVERLAP_COMBINATION = [
+    {
+        Value: 16,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Global Muddy Shorelines (outside of any Myanmar, but within analysis extent)',
+    },
+    {
+        Value: 18,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Myanmar Muddy Shorlines',
+    },
+    {
+        Value: 20,
+        'Overlap Combinations': 'Global Muddy Shores with Myanmar Muddy Shores',
+    },
+    {
+        Value: 21,
+        'Overlap Combinations':
+            'Global Muddy Shores with Myanmar Tropical flooded forests and peat forest ',
+    },
+    {
+        Value: 22,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Global Muddy Shores with Myanmar Intertidal forests and Shrublands',
+    },
+    {
+        Value: 23,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Myanmar Pyric tussock',
+    },
+    {
+        Value: 24,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Myanmar Sandy Shorelines',
+    },
+    {
+        Value: 25,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Myanmar Tropical flooded forests and peat forest ',
+    },
+    {
+        Value: 26,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Global Muddy Shores with Myanmar Trop. Flooded forests and peat forests',
+    },
+    {
+        Value: 27,
+        'Overlap Combinations':
+            'Global Muddy Shores with Myanmar Sandy Shorelines',
+    },
+    {
+        Value: 28,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Global Muddy Shores with Myanmar Sandy shorelines',
+    },
+    {
+        Value: 29,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Global Muddy Shores with Myanmar lowland Pyric tussock',
+    },
+    {
+        Value: 30,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Myanmar Intertidal Forests and Shrublands',
+    },
+    {
+        Value: 32,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Global Muddy Shores with Myanmar Muddy shorelines',
+    },
+    {
+        Value: 33,
+        'Overlap Combinations':
+            'Global Muddy Shores with Myanmar Pyric tussock',
+    },
+    {
+        Value: 34,
+        'Overlap Combinations':
+            'Global Muddy Shores with Myanmar Intertidal forests and Shrublands',
+    },
+    {
+        Value: 35,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Myanmar Dry Forests and Thickets',
+    },
+    {
+        Value: 36,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Global Muddy Shores with Myanmar Dry Forests and Thickets',
+    },
+    {
+        Value: 37,
+        'Overlap Combinations':
+            'Global Muddy Shores with Myanmar Dry Forests and Thickets ',
+    },
+    {
+        Value: 38,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Myanmar Ice Sheets ',
+    },
+    {
+        Value: 39,
+        'Overlap Combinations': 'Global Muddy Shores with Myanmar Ice Sheets ',
+    },
+    {
+        Value: 40,
+        'Overlap Combinations':
+            'Global Muddy Shores with Myanmar seasonal flood plains and marshes ',
+    },
+    {
+        Value: 41,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Myanmar boreal and temperate high montane forests and woodlands ',
+    },
+    {
+        Value: 42,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Myanmar Tropical Heath Forests',
+    },
+    {
+        Value: 44,
+        'Overlap Combinations':
+            'Global Muddy Shores with Myanmar lowland rainforests ',
+    },
+    {
+        Value: 45,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Myanmar lowland rainforests',
+    },
+    {
+        Value: 46,
+        'Overlap Combinations':
+            'Global Intertidal Forests and Shrublands with Global Muddy Shores with Myanmar lowland rainforests',
+    },
+];
+
 export type Myanmar_EFG_Feature_Attributes =
     typeof RASTER_ATTRIBUTE_TABLE.features[0]['attributes'];

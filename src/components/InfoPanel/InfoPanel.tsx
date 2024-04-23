@@ -1,11 +1,19 @@
 import { Point } from '@arcgis/core/geometry';
 import { Myanmar_EFG_Feature_Attributes } from '@services/Myanmar-EFG/config';
+import { getFillColorByEFGName } from '@services/Myanmar-EFG/getColorByEFGName';
+import { getOverlapCombinationByPixelValue } from '@services/Myanmar-EFG/getOverlapCombinationByPixelValue';
+import classNames from 'classnames';
 import React, { FC } from 'react';
 
 type Props = {
     queryLocation: Point;
     featureAttributes: Myanmar_EFG_Feature_Attributes;
     closeButtonOnClick: () => void;
+};
+
+type TableData = {
+    name: string;
+    value: string;
 };
 
 export const InfoPanel: FC<Props> = ({
@@ -20,6 +28,27 @@ export const InfoPanel: FC<Props> = ({
                     <p>Click on map to identify EFG related info </p>
                 </div>
             );
+        }
+
+        const overlapCombination = getOverlapCombinationByPixelValue(
+            featureAttributes.Value
+        );
+
+        const pixelFillColor = getFillColorByEFGName(
+            featureAttributes.EFG_Name
+        );
+
+        const tableData: TableData[] = [
+            { name: 'EFG Name', value: featureAttributes.EFG_Name },
+            { name: 'Biome Name', value: featureAttributes.Biome_Name },
+            { name: 'Realm Name', value: featureAttributes.Realm_Name },
+        ];
+
+        if (overlapCombination) {
+            tableData.push({
+                name: 'Overlap Combination',
+                value: overlapCombination,
+            });
         }
 
         return (
@@ -41,16 +70,32 @@ export const InfoPanel: FC<Props> = ({
                     </div>
                 </div>
 
-                <div className="flex items-center py-2 bg-custom-background-1 bg-opacity-25">
-                    <div className=" flex-grow px-1">
-                        {featureAttributes.EFG_Name}
-                    </div>
-                    <div className=" w-24 shrink-0 px-1 text-right opacity-60">
-                        EFG Name
-                    </div>
-                </div>
+                {tableData.map((d, index) => {
+                    return (
+                        <div
+                            key={Math.random()}
+                            className={classNames(
+                                'flex items-center my-1 py-2 pl-2 border-l-4',
+                                {
+                                    'bg-custom-background-1 bg-opacity-25':
+                                        index % 2 === 0,
+                                }
+                            )}
+                            style={{
+                                borderColor: `rgba(${pixelFillColor.join(
+                                    ','
+                                )})`,
+                            }}
+                        >
+                            <div className="flex-grow px-1">{d.value}</div>
+                            <div className="w-24 shrink-0 px-1 text-right opacity-60">
+                                {d.name}
+                            </div>
+                        </div>
+                    );
+                })}
 
-                <div className="flex items-center py-2">
+                {/* <div className="flex items-center py-2">
                     <div className=" flex-grow px-1">
                         {featureAttributes.Biome_Name}
                     </div>
@@ -66,7 +111,7 @@ export const InfoPanel: FC<Props> = ({
                     <div className=" w-24 shrink-0 px-1 text-right opacity-60">
                         Realm Name
                     </div>
-                </div>
+                </div> */}
 
                 <div className=" mt-4 ">
                     <calcite-button
