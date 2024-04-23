@@ -5,6 +5,7 @@ import { HorizontalBarChart } from '@vannizhang/react-d3-charts';
 import { HorizontalBarChartDataItem } from '@vannizhang/react-d3-charts/dist/HorizontalBarChart/types';
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import { Histogram } from './Histogram';
 
 export const HistogramContainer = () => {
     const histogramRes = useSelector(selectMyanmarEFGLayerHistogramResult);
@@ -25,7 +26,8 @@ export const HistogramContainer = () => {
 
         // get total count of pixels that have value greater than 1 (1 indicate no value assigned)
         const countOfPixels = entries.reduce((accu, curr) => {
-            return curr[0] !== 1 ? accu + curr[1] : accu;
+            // return curr[0] !== 1 ? accu + curr[1] : accu;
+            return accu + curr[1];
         }, 0);
 
         for (const [key, val] of entries) {
@@ -57,46 +59,16 @@ export const HistogramContainer = () => {
         setChartData(data);
     }, [histogramRes]);
 
-    if (!chartData || !chartData.length) {
-        return null;
-    }
-
     return (
-        <div
-            className="relative w-full h-[400px]"
-            style={
-                {
-                    '--axis-tick-line-color': 'var(--calcite-color-text-3)',
-                    '--axis-tick-text-color': 'var(--calcite-color-text-2)',
-                    '--axis-tick-text-font-size': '10px',
-                } as React.CSSProperties
-            }
-        >
-            <HorizontalBarChart
-                // xScaleOptions={{
-                //     domain: [
-                //         0,
-                //         100
-                //     ]
-                // }}
-                bottomAxisOptions={{
-                    // indicate number of ticks on bottom axis that should be rendered
-                    numberOfTicks: 3,
-                    // extend ticks on y axis and show them as grid lines
-                    showGridLines: true,
-                    // custom format function that add '$' to tick label text
-                    tickFormatFunction: (val: string | number) => {
-                        return `${val}%`;
-                    },
-                }}
-                data={chartData}
-                margin={{
-                    left: 230,
-                    right: 15,
-                    top: 30,
-                    bottom: 30,
-                }}
-            />
+        <div className="w-full mt-8">
+            <div className="mb-1 text-center">
+                <h3 className="text-lg">Histogram</h3>
+            </div>
+            <p className="text-xs mb-4 opacity-50">
+                Percentage of areas in current map extent by EFG Preliminary
+                Combinations{' '}
+            </p>
+            <Histogram chartData={chartData} />
         </div>
     );
 };

@@ -30,7 +30,7 @@ module.exports = {
     },
     extend: {
       spacing: {
-        'side-panel-width': '430px',
+        'side-panel-width': '450px',
         'bottom-panel-height': '250px',
       }
     },
