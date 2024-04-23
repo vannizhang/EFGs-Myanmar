@@ -1,6 +1,7 @@
 import { Header } from '@components/Header/Header';
 import { Histogram } from '@components/Histogram';
 import { InfoPanel } from '@components/InfoPanel';
+import { PixelValueSelector } from '@components/PixelValueSelector/PixelValueSelector';
 import React from 'react';
 
 export const SidePanel = () => {
@@ -9,6 +10,7 @@ export const SidePanel = () => {
             <Header />
             <InfoPanel />
             <Histogram />
+            <PixelValueSelector />
         </div>
     );
 };

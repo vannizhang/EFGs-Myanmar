@@ -36,6 +36,7 @@ import { IdentifyTaskLocation } from '@components/IdentifyTaskLocation/IdentifyT
 import BookmarksWidget from '@components/BookmarkWidget/BookmarkWidget';
 import LayerListWidget from '@components/LayersList/LayersList';
 import Sentinel2Layer from '@components/Sentinel2Layer/Sentinel2Layer';
+import { MyanmarEFGLayerFilter } from '@components/MyanmarEFGLayer/MyanmarEFGLayerFilter';
 
 export const MapViewContainer = () => {
     const dispatch = useDispatch();
@@ -106,6 +107,8 @@ export const MapViewContainer = () => {
                         dispatch(myanmarEFGLayerHistogramResultChanged(res));
                     }}
                 />
+
+                <MyanmarEFGLayerFilter />
             </MapView>
 
             <MapLoadingIndicator active={isUpdating} />

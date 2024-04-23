@@ -11,6 +11,11 @@ export const selectMyanmarEFGLayerHistogramResult = createSelector(
     (myanmarEFGLayerHistogramResult) => myanmarEFGLayerHistogramResult
 );
 
+export const selectMyanmarEFGLayerSelectedPixelValues = createSelector(
+    (state: RootState) => state.Map.myanmarEFGLayerSelectedPixelValues,
+    (myanmarEFGLayerSelectedPixelValues) => myanmarEFGLayerSelectedPixelValues
+);
+
 export const selectIsQuerying = createSelector(
     (state: RootState) => state.Map.isQuerying,
     (isQuerying) => isQuerying

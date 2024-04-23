@@ -28,12 +28,17 @@ export type MapState = {
      * histogram of pixels on map's current extent
      */
     myanmarEFGLayerHistogramResult: PixelsHistogram;
+    /**
+     * the use selected pixel value that will be used to create a mask to filter the Myanmar EFG Layer
+     */
+    myanmarEFGLayerSelectedPixelValues: number[];
     isQuerying: boolean;
 };
 
 export const initialMapState: MapState = {
     myanmarEFGLayerIdentifyResult: null,
     myanmarEFGLayerHistogramResult: null,
+    myanmarEFGLayerSelectedPixelValues: null,
     isQuerying: false,
 };
 
@@ -53,6 +58,12 @@ const slice = createSlice({
         ) => {
             state.myanmarEFGLayerHistogramResult = action.payload;
         },
+        myanmarEFGLayerSelectedPixelsValueChanged: (
+            state,
+            action: PayloadAction<number[]>
+        ) => {
+            state.myanmarEFGLayerSelectedPixelValues = action.payload;
+        },
         isQueryingToggled: (state, action: PayloadAction<boolean>) => {
             state.isQuerying = action.payload;
         },
@@ -64,6 +75,7 @@ const { reducer } = slice;
 export const {
     myanmarEFGLayerIdentifyResultChanged,
     myanmarEFGLayerHistogramResultChanged,
+    myanmarEFGLayerSelectedPixelsValueChanged,
     isQueryingToggled,
 } = slice.actions;
 

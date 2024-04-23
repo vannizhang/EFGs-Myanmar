@@ -21,3 +21,9 @@ export const getArrtibutesByPixelValue = (
 
     return featureByPxielValue.get(pixel);
 };
+
+export const getAttributesByEFGName = (name: string) => {
+    return RASTER_ATTRIBUTE_TABLE.features.filter((feature) => {
+        return feature.attributes.EFG_Name === name;
+    });
+};

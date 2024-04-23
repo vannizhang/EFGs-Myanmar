@@ -1,14 +1,15 @@
 import MapView from '@arcgis/core/views/MapView';
-import ImageryTileLayer from '@arcgis/core/layers/ImageryTileLayer';
-import ImageHistogramParameters from '@arcgis/core/rest/support/ImageHistogramParameters';
+// import ImageryTileLayer from '@arcgis/core/layers/ImageryTileLayer';
+// import ImageHistogramParameters from '@arcgis/core/rest/support/ImageHistogramParameters';
 import React, { FC, useEffect, useRef } from 'react';
 import { watch } from '@arcgis/core/core/reactiveUtils';
-import { TITLE_OF_MYANMAR_EPG_LAYER } from '@constants/index';
+// import { TITLE_OF_MYANMAR_EPG_LAYER } from '@constants/index';
 import { Point } from '@arcgis/core/geometry';
 import {
     ImageryTileLayerIdentifyResult,
     PixelsHistogram,
 } from '@store/Map/reducer';
+import { useMyanmarEFGLayer } from './useMyanmarEFGLayer';
 
 type Props = {
     identifyResponseHandler: (data: ImageryTileLayerIdentifyResult) => void;
@@ -21,15 +22,15 @@ export const MyanmarEFGLayerQueryTask: FC<Props> = ({
     computeHistogramResponseHandler,
     mapView,
 }) => {
-    const layerRef = useRef<ImageryTileLayer>();
+    const layer = useMyanmarEFGLayer({ mapView });
 
     const getHistogram = async () => {
-        if (!layerRef.current) {
+        if (!layer) {
             return;
         }
 
         try {
-            const res = await layerRef.current.fetchPixels(
+            const res = await layer.fetchPixels(
                 mapView.extent,
                 mapView.width,
                 mapView.height
@@ -68,7 +69,7 @@ export const MyanmarEFGLayerQueryTask: FC<Props> = ({
         mapView.on('click', async (evt) => {
             const point = evt.mapPoint;
             // console.log(evt.mapPoint)
-            const res = await layerRef.current.identify(point);
+            const res = await layer.identify(point);
             // console.log(res)
 
             identifyResponseHandler({
@@ -104,12 +105,12 @@ export const MyanmarEFGLayerQueryTask: FC<Props> = ({
     };
 
     const init = async () => {
-        layerRef.current = mapView.map.layers.find(
-            (layer) => layer.title === TITLE_OF_MYANMAR_EPG_LAYER
-        ) as ImageryTileLayer;
+        // layerRef.current = mapView.map.layers.find(
+        //     (layer) => layer.title === TITLE_OF_MYANMAR_EPG_LAYER
+        // ) as ImageryTileLayer;
         // console.log('Myanmar EFG Layer', layer)
 
-        await layerRef.current.when();
+        await layer.when();
 
         addClickEventHandler();
 
@@ -119,9 +120,12 @@ export const MyanmarEFGLayerQueryTask: FC<Props> = ({
     };
 
     useEffect(() => {
-        if (mapView) {
-            init();
+        if (!mapView || !layer) {
+            return;
         }
-    }, [mapView]);
+
+        init();
+    }, [mapView, layer]);
+
     return null;
 };
