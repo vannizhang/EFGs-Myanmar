@@ -34,6 +34,7 @@ import {
 } from '@store/Map/reducer';
 import { IdentifyTaskLocation } from '@components/IdentifyTaskLocation/IdentifyTaskLocation';
 import BookmarksWidget from '@components/BookmarkWidget/BookmarkWidget';
+import LayerListWidget from '@components/LayersList/LayersList';
 
 export const MapViewContainer = () => {
     const dispatch = useDispatch();
@@ -84,9 +85,11 @@ export const MapViewContainer = () => {
                     mapViewUpdatingOnChange={setIsUpdating}
                 />
 
-                <LegendWidget />
+                <LayerListWidget />
 
                 <BookmarksWidget />
+
+                <LegendWidget />
 
                 <IdentifyTaskLocation />
 
