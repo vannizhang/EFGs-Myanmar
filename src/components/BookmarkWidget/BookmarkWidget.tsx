@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MapView from '@arcgis/core/views/MapView';
-import Legend from '@arcgis/core/widgets/Legend';
+import Bookmarks from '@arcgis/core/widgets/Bookmarks';
 import Expand from '@arcgis/core/widgets/Expand';
 // import { SiteContext } from '../../contexts/SiteContextProvider';
 
@@ -9,26 +9,26 @@ interface Props {
     mapView?: MapView;
 }
 
-const LegendWidget: React.FC<Props> = ({ mapView }) => {
+const BookmarksWidget: React.FC<Props> = ({ mapView }) => {
     // const { isMobile } = React.useContext(SiteContext)
 
     // const [ legend, setLegend ] = React.useState<ILegend>();
 
-    const init = async () => {
+    const init = () => {
         // console.log('init legend');
-        const legend = new Legend({
+        const bookmarks = new Bookmarks({
             view: mapView,
         });
 
-        const legendWidgetExpand = new Expand({
+        const bookmarksWidgetExpand = new Expand({
             view: mapView,
-            content: legend,
-            // expandIconClass: 'esri-icon-legend',
+            content: bookmarks,
+            // expandIconClass: 'esri-icon-bookmarks',
             expanded: false,
             mode: 'floating',
         });
 
-        mapView.ui.add(legendWidgetExpand, 'top-left');
+        mapView.ui.add(bookmarksWidgetExpand, 'top-left');
     };
 
     React.useEffect(() => {
@@ -44,4 +44,4 @@ const LegendWidget: React.FC<Props> = ({ mapView }) => {
     return null;
 };
 
-export default LegendWidget;
+export default BookmarksWidget;

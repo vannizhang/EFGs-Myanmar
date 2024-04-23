@@ -33,6 +33,7 @@ import {
     myanmarEFGLayerIdentifyResultChanged,
 } from '@store/Map/reducer';
 import { IdentifyTaskLocation } from '@components/IdentifyTaskLocation/IdentifyTaskLocation';
+import BookmarksWidget from '@components/BookmarkWidget/BookmarkWidget';
 
 export const MapViewContainer = () => {
     const dispatch = useDispatch();
@@ -84,6 +85,8 @@ export const MapViewContainer = () => {
                 />
 
                 <LegendWidget />
+
+                <BookmarksWidget />
 
                 <IdentifyTaskLocation />
 
