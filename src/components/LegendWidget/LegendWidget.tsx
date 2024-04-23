@@ -28,7 +28,7 @@ const LegendWidget: React.FC<Props> = ({ mapView }) => {
             mode: 'floating',
         });
 
-        mapView.ui.add(legendWidgetExpand, 'top-left');
+        mapView.ui.add(legendWidgetExpand, 'bottom-left');
     };
 
     React.useEffect(() => {
