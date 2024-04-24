@@ -13,6 +13,7 @@
  * limitations under the License.
  */
 
+import { signOut } from '@utils/esri-oauth';
 import React, { FC } from 'react';
 
 type Props = {
@@ -23,16 +24,23 @@ export const ErrorPage: FC<Props> = ({ error }) => {
     return (
         <div className="flex justify-center items-center w-screen h-screen theme-background text-custom-light-blue">
             <div className="max-w-2xl">
-                <p>
-                    This app is temporarily unavailable due to an issue fetching
-                    data from one of the data services.
+                <p className="mt-4 mb-4">
+                    This app is only accessible to the members of the Group on
+                    Earth Observations (GEO) ArcGIS Online Organization.
                 </p>
 
-                {error && error.message ? (
-                    <p className="mt-4 text-sm">
-                        Error Message: {error.message}
-                    </p>
-                ) : null}
+                <p>
+                    Please try to{' '}
+                    <span
+                        className="  text-custom-brand cursor-pointer"
+                        onClick={() => {
+                            signOut();
+                        }}
+                    >
+                        sign in
+                    </span>{' '}
+                    again using the correct ArcGIS Online account.
+                </p>
             </div>
         </div>
     );

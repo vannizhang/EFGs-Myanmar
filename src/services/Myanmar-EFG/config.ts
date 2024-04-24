@@ -1,3 +1,6 @@
+export const EFG_SERVICE_URL =
+    'https://tiledimageservices9.arcgis.com/Ya0zACTJqGpg3RGY/arcgis/rest/services/Myanmar_EFG_Preliminary_Crosswalk_Combinations/ImageServer';
+
 /**
  * @see https://tiledimageservices9.arcgis.com/Ya0zACTJqGpg3RGY/arcgis/rest/services/Myanmar_EFG_Preliminary_Crosswalk_Combinations/ImageServer/rasterattributetable?f=pjson
  */

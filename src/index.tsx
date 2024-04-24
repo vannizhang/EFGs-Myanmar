@@ -8,9 +8,10 @@ import configureAppStore, { getPreloadedState } from './store/configureStore';
 
 // import AppContextProvider from './contexts/AppContextProvider';
 import { Layout } from '@components/Layout/Layout';
-import { initEsriOAuth } from '@utils/esri-oauth';
+import { initEsriOAuth, isAnonymouns, signIn } from '@utils/esri-oauth';
 import { APP_ID } from './constants';
 import { ErrorPage } from '@components/ErrorPage/ErrorPage';
+import { canAccessEFGImageryService } from '@services/Myanmar-EFG/helper';
 
 (async () => {
     const root = createRoot(document.getElementById('root'));
@@ -19,6 +20,14 @@ import { ErrorPage } from '@components/ErrorPage/ErrorPage';
         await initEsriOAuth({
             appId: APP_ID,
         });
+
+        if (isAnonymouns()) {
+            signIn();
+            return;
+        }
+
+        // check and see if the signed in user can assign the EFG layer that just shared with the org
+        await canAccessEFGImageryService();
 
         const preloadedState = getPreloadedState();
 
@@ -29,5 +38,6 @@ import { ErrorPage } from '@components/ErrorPage/ErrorPage';
         );
     } catch (err) {
         root.render(<ErrorPage error={err} />);
+        // console.log(err)
     }
 })();
