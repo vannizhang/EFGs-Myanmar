@@ -9,7 +9,7 @@ Before you start, make sure you have a fresh version of [Node.js](https://nodejs
 
 1. Fork this repository and clone your own fork to your computer: 
     ```sh
-    git clone https://github.com/YOUR_USERNAME/react-redux-boilerplate.git
+    git clone https://github.com/vannizhang/EFGs-Myanmar.git
     ```
 
 
