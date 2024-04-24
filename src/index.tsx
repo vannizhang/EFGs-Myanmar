@@ -21,6 +21,8 @@ import { canAccessEFGImageryService } from '@services/Myanmar-EFG/helper';
             appId: APP_ID,
         });
 
+        // user has to be signed in to use this app.
+        // therefore prompt user to sign in if they are not.
         if (isAnonymouns()) {
             signIn();
             return;
