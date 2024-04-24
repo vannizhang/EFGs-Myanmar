@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux';
 import { CloseButton } from './CloseButton';
 import { useDispatch } from 'react-redux';
 import { showAboutModalToggled } from '@store/UI/reducer';
+import { SourceInfoPanel } from './SourceInfoPanel';
+import { SOURCES } from './config';
 
 export const About = () => {
     const dispatch = useDispatch();
@@ -34,14 +36,16 @@ export const About = () => {
                         maxWidth: 1680,
                     }}
                 >
-                    <h1 className="text-xl mb-4">
-                        About Ecological Functional Groups of Myanmar
+                    <h1 className="text-3xl mb-12">
+                        Sources for Ecological Functional Groups of Myanmar App
                     </h1>
-                    <hr className="mb-4 opacity-25" />
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nesciunt corporis quod neque cumque fugit mollitia eum
-                    libero? Laborum hic fuga animi delectus temporibus veniam
-                    dolores, libero blanditiis repellat minima ratione.
+                    {/* <hr className="mb-12 opacity-25" /> */}
+
+                    <SourceInfoPanel data={SOURCES[0]} />
+
+                    <SourceInfoPanel data={SOURCES[1]} />
+
+                    <SourceInfoPanel data={SOURCES[2]} />
                 </div>
             </div>
         </div>
