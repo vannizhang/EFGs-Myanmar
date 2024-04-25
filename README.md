@@ -1,6 +1,8 @@
 # Ecological Functional Groups of Myanmar
 
-[View it live](https://livingatlas.arcgis.com/landsatexplorer/)
+The [Group on Earth Observations (GEO)'s Ecosystem Atlas](https://earthobservations.org/solutions/incubators/global-ecosystems-atlas) will bring together high-quality global, regional and national ecosystems maps into a single, open, online resource. This "Ecological Functional Groups of Myanmar" application supports the first example of the initial steps to produce a prototype atlas. The ability to see the quality and compatibility of the source ecosystems maps and how they can be cross-walked, synthesized and presented as a coherent information product is vital to the success of the atlas. This example application, focused on Myanmar, is an initial test to demonstrate the challenges and possibilities involved in compiling the Ecosystem Atlas. 
+
+[View it live](https://livingatlas.arcgis.com/labs/efg-myanmar/)
 
 ![App](./screenshot.jpg)
 
