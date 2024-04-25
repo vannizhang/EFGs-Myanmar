@@ -4,7 +4,7 @@ The [Group on Earth Observations (GEO)'s Ecosystem Atlas](https://earthobservati
 
 [View it live](https://livingatlas.arcgis.com/labs/efg-myanmar/)
 
-![App](./screenshot.jpg)
+![App](./public/screenshot.jpg)
 
 ## Getting Started
 Before you start, make sure you have a fresh version of [Node.js](https://nodejs.org/en/) and NPM installed. The current Long Term Support (LTS) release is an ideal starting point.
