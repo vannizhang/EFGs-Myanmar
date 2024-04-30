@@ -1,8 +1,14 @@
+// /**
+//  * Contains basis to evaluate sources for Myanmar EFG base map compilation.
+//  * @see https://grouponeo.maps.arcgis.com/home/item.html?id=14e065e2fbfa4b10ac1a7aeec5a5dbea
+//  */
+// export const WEB_MAP_ID = '14e065e2fbfa4b10ac1a7aeec5a5dbea';
+
 /**
- * Contains basis to evaluate sources for Myanmar EFG base map compilation.
- * @see https://grouponeo.maps.arcgis.com/home/item.html?id=14e065e2fbfa4b10ac1a7aeec5a5dbea
+ * Clone of the Web Map above.
+ * @see https://grouponeo.maps.arcgis.com/home/item.html?id=c5eca89fd37a4436bdf096f3060254e1
  */
-export const WEB_MAP_ID = '14e065e2fbfa4b10ac1a7aeec5a5dbea';
+export const WEB_MAP_ID = 'c5eca89fd37a4436bdf096f3060254e1'; //'14e065e2fbfa4b10ac1a7aeec5a5dbea';
 
 // /**
 //  * Clone of the webmap above Contains basis to evaluate sources for Myanmar EFG base map compilation.
