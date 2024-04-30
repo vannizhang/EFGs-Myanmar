@@ -21,15 +21,15 @@ import { canAccessEFGImageryService } from '@services/Myanmar-EFG/helper';
             appId: APP_ID,
         });
 
-        // user has to be signed in to use this app.
-        // therefore prompt user to sign in if they are not.
-        if (isAnonymouns()) {
-            signIn();
-            return;
-        }
+        // // user has to be signed in to use this app.
+        // // therefore prompt user to sign in if they are not.
+        // if (isAnonymouns()) {
+        //     signIn();
+        //     return;
+        // }
 
-        // check and see if the signed in user can assign the EFG layer that just shared with the org
-        await canAccessEFGImageryService();
+        // // check and see if the signed in user can assign the EFG layer that just shared with the org
+        // await canAccessEFGImageryService();
 
         const preloadedState = getPreloadedState();
 
